@@ -1,3 +1,4 @@
+import 'package:codezen_iptp/widgets/responsive_button.dart';
 import 'package:flutter/material.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -31,7 +32,12 @@ class _WelcomePageState extends State<WelcomePage> {
                 child: Row(
                   children: [
                     Column(
-                      children: [],
+                      children: [
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        ResponsiveButton(),
+                      ],
                     )
                   ],
                 ),
