@@ -15,8 +15,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.black87,
       body: Column(children: [
         Container(
-          padding: const EdgeInsets.only(top: 70, left: 20),
-          margin: const EdgeInsets.only(right: 20),
+          padding: const EdgeInsets.only(top: 70, left: 20, right: 20),
           child: Row(children: [
             Icon(
               Icons.arrow_back,
@@ -36,9 +35,83 @@ class _HomePageState extends State<HomePage> {
         Container(
             width: 420,
             height: 223,
-            child: Image(
+            child: const Image(
               image: AssetImage("img/home_page _img1.png"),
-            ))
+            )),
+        SizedBox(height: 5),
+        Container(
+          padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
+          color: Colors.white,
+          child: Row(
+              mainAxisAlignment:
+                  MainAxisAlignment.center, // Centerize the icons
+              children: [
+                Icon(
+                  Icons.call,
+                  size: 25,
+                  color: Colors.black,
+                ),
+                Expanded(child: Container()),
+                Icon(
+                  Icons.book,
+                  size: 25,
+                  color: Colors.black,
+                ),
+                Expanded(child: Container()),
+                Icon(
+                  Icons.star_border,
+                  size: 25,
+                  color: Colors.black,
+                ),
+                Expanded(child: Container()),
+                Icon(
+                  Icons.info,
+                  size: 25,
+                  color: Colors.black,
+                ),
+              ]),
+        ),
+        Container(
+          padding: const EdgeInsets.only(top: 10, left: 13, right: 5),
+          color: Colors.white,
+          child: Row(
+              mainAxisAlignment:
+                  MainAxisAlignment.center, // Centerize the icons
+              children: [
+                const Text(
+                  "CONTACT",
+                  style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 12,
+                  ),
+                ),
+                Expanded(child: Container()),
+                Expanded(child: Container()),
+                const Text(
+                  "BOOK",
+                  style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 12,
+                  ),
+                ),
+                Expanded(child: Container()),
+                const Text(
+                  "RECOMMENDATION",
+                  style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 12,
+                  ),
+                ),
+                Expanded(child: Container()),
+                const Text(
+                  "MORE INFO.",
+                  style: TextStyle(
+                    color: Colors.black54,
+                    fontSize: 12,
+                  ),
+                ),
+              ]),
+        ),
       ]),
     );
   }
