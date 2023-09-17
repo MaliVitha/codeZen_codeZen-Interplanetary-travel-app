@@ -1,3 +1,4 @@
+import 'package:codezen_iptp/Pages/navpages/main_page.dart';
 import 'package:codezen_iptp/Pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WelcomePage(),
+      home: MainPage(),
     );
   }
 }
